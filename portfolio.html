@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title>promia's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+div{
+  font-size:98%;
+  font-family: trebuchet ms;
+  text-transform:lowercase;
+  background:#111;
+  letter-spacing:2px;
+  line-height:20px;
+  color:#eee;
+}
+.wholeThing{
+  margin:-20px;
+  vertical-align: middle;
+}
+.prompter{
+  font-size:25px;
+  background: 0;
+}
+.startYes:hover{
+  padding:2px 6px;
+  margin:-1px -5px 5%;
+  background: #111;
+  border: solid 1px #444;
+}
+.startYes{
+  margin-bottom: 5%;
+}
+button{
+  background:0;
+  padding:0;
+  font:15px trebuchet ms;
+  letter-spacing:2px;
+  color:#eee;
+  border:0;
+  transition: 0.5s ease-out;
+}button:focus { outline: none; }
+button:hover{cursor:cell}
+.flowerIcon{
+  width:30%;
+  border:solid 1px #444;
+  padding:7px 15px 7px 7px;
+  display: block;
+}
+.imageText {
+  color: #ccc;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  position: absolute;
+  top: 12%;
+  left: 10%;
+}
+.imageOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 34%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #111;
+  border: solid 1px #444;
+  display: inline;
+}
+blockquote{
+  border-radius: 0;
+  background: 0;
+  padding: 0;
+  margin: 0;
+}
+.container:hover .imageOverlay {
+  opacity: 1;
+}.container:hover{
+  cursor:cell;
+}
+.intro{
+  margin:-11% 27% 0 32%;
+  border-right:solid 1px #444;
+}
+.introSpan{
+  background: #111;
+  padding:9px;
+  font-weight: bold;
+  font-size: 110%;
+}
+.occupationTag{
+  margin-right: 5%;
+  font-size: 94%;
+  color: #ddd;
+  text-decoration: none
+}
+.occupationTag:hover{
+  text-decoration: underline;
+  color: #eee;
+  font-weight: bold;
+}
+.line1{
+  margin:-2.6% 0 -3% 73%;
+  border-top:solid 1px #444;
+  border-right:solid 1px #444;
+  padding:8% 0;
+}
+.line2{
+  margin:-3% -1% 0 22.5%;
+  border-top: solid 1px #444;
+}
+.description{
+  margin-right:1%;
+  line-height:30px;
+}
+.experience{
+  padding-right: 4%;
+  border-right: solid 1px #444;
+}
+.actualDesc{
+  line-height: 22px;
+  padding: 2% 0 3%;
+  letter-spacing: 0.5px;
+  border-bottom: solid 1px #444;
+  font-size: 94%;
+  font-weight: 0;
+  margin-bottom: 2%;
+  color: #ccc;
+  text-align: justify;
+  display:inline-block;
+}
+.container {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  opacity: 0;
+  transition: .5s ease;
+  display:inline-block;
+  margin:20% -150% 0 -100%;
+  border: solid 1px #444;
+  padding:3px 7px;
+}
+.expOverlay {
+  position: absolute;
+  opacity: 0;
+  background: #111;
+  transition: .5s ease;
+  display:inline-block;
+  margin:0% 120% 0 -400%;
+  border: solid 1px #444;
+  padding:3px 7px;
+}
+.descOverlay {
+  opacity: 0;
+  transition: .5s ease;
+  display:inline-block;
+  position: absolute;
+}
+.descMargin{
+  margin:-1000% -1000% 0 700%;
+  display: inline-block;
+  border: solid 1px #444;
+  background: #111;
+  padding:3px 7px;
+}
+.overlayTwo {
+  position: absolute;
+  opacity: 0;
+  transition: .5s ease;
+  display:inline-block;
+  margin:20% -185% 0 -180%;
+  border: solid 1px #444;
+  padding:3px 7px;
+}
+.overlayThree {
+  position: absolute;
+  opacity: 0;
+  transition: .5s ease;
+  display:inline-block;
+  margin:35% -450% 0 -340%;
+  border: solid 1px #444;
+  padding:3px 7px;
+}
+.container:hover .overlay {
+  opacity: 0.7;
+}
+.container:hover .overlayTwo {
+  opacity: 0.7;
+}
+.container:hover .overlayThree {
+  opacity: 0.7;
+}
+.container:hover .expOverlay {
+  opacity: 1.0;
+}
+.container:hover .descOverlay {
+  opacity: 1.0;
+}
+.text {
+  display:inline-block;
+  line-height: 22px;
+  font-size: 94%;
+  letter-spacing: 0.5px;
+  color:#ddd;
+}
+
+.programs{
+  margin:0 15px;
+}
+.mediums{
+  margin: 0 15px;
+}.mediumsTwo{margin-left:15px}
+.code{
+  color: #444;
+  margin-right: 25px
+}
+.code2{margin-left: 15px}
+.myBio{
+  font-weight: bold;
+  color:#eee
+}
+.content{
+  transition: 1s ease;
+}a:hover{cursor:cell}
+</style>
+</head>
+<body>
+
+<div class="wholeThing"style="padding:0% 20%">
+  <div style="border:solid #444;border-width:0 1px;padding:0 20%">
+    <div style="border:solid #444;border-width:0 1px;padding:0 25%">
+      <div style="border:solid #444;border-width:0 1px;padding:0 35%">
+      <div class="content"style="margin:0 -200% 0 -200%;padding:390.5% 0;background:0">
+  <div id="startPage"style="display: block;background:0">
+<span class="prompter">start? <img src="https://i.imgur.com/hQ1USaa.gif"height="20px"width="2px"></span>
+<p><button class="startYes" onclick="toggleText()">yes
+  </button>
+</div></div>
+<div id="demo"class="content"style="margin:-720% -200% -200%;padding:217% 0;background: 0;display: none">
+
+
+</div>
+</div></div></div></div>
+</body>
+<script>
+  function toggleText() {
+    var text = document.getElementById("demo");
+    var startPage = document.getElementById("startPage");
+    if (text.style.display === "none") {
+      text.style.display = "block";
+      startPage.style.display ="none";
+    } else {
+      text.style.display = "none";
+      startPage.style.display = "block";
+    }
+  }
+
+descText = "I am a student from new york city who likes partaking in various hobbies.";
+descText += "<br>my interest in computer science started with my partipation in a ";
+descText+= "graphic design community, which helped nurture my sense of style when it comes to html interfaces and ui graphics. ";
+descText += "<br> - in the future, i would like to professionally enter these fields and create a larger space for art and design in technology.";
+descText += "<br> - this website is a passion project for me, in order to display and combine my experiences with multiple skillsets.";
+
+expText ='i am not a professional, these are just hobbies<br>';
+descHoverText ='<b>hint: </b>this website is optimized for full screen display on macbook';
+
+
+flowerImageURL = "https://www.stickpng.com/assets/images/584437bea6515b1e0ad75b66.png";
+graphicText = '<b>programs:</b><br>';
+graphicText += 'picsart<span class="programs">photoshop cc</span>adobe premiere pro (video making)';
+graphicText += '<br><b>experience:</b> about 4 years (since november 2015)';
+
+artText = '<b>mediums: </b>';
+artText += 'graphite pencil<span class="mediums">watercolor</span>calligraphy<span class="mediumsTwo">oil paints</span>';
+
+codingText ='<b>languages: </b><br>javascript/html/css <span class="code">(used to code this website)</span>';
+codingText += 'python<br><br><b>experience: </b><br>html/css for almost 4 years';
+codingText += '<span class="code2">javascript/python since july 2019</span>';
+myBio ='<span class="myBio">senior</span> at mhshs<br>aiming to major in ';
+myBio+='<span class="myBio">computer science</span> in college';
+
+text= '<blockquote class="container">';
+text+= '<img class="flowerIcon" src='+flowerImageURL+'>';
+text+= '<span class="imageOverlay"><span class="imageText">'+myBio+'</span></span></blockquote>';
+text+= '<div class="intro"><span class="introSpan">Promia chowdhury</span></div>';
+text+= '<div class="line1"></div>';
+text+= '<div class="description">';
+
+text+= '<span class="container">';
+text+= '<span class="experience"><b>experience</b></span>';
+text+= '<span class="expOverlay"><span class="text">'+expText+'</span></span>';
+text+= '</span>';
+
+text+= '<div class="line2"></div></div><br>'
+
+text+= '<span class="container">';
+text+= '<span class="actualDesc">'+descText+'</span>';
+text+= '<span class="descOverlay"><span class="text"><span class="descMargin">'+descHoverText+'</span></span></span>';
+text+= '</span>';
+
+link = "file:///Users/chowdhury/Documents/riya%20html/portfolio/examples.html";
+text+= '<span class="container">';
+text+= '<a class="occupationTag"href='+link+'>graphic design ▼</a>'
+text+= '<span class="overlay"><span class="text">'+graphicText+'</span></span>';
+text+='</span>';
+
+text+= '<span class="container">';
+text+= '<a class="occupationTag"href='+link+'>traditional art ▼</a>';
+text+= '<span class="overlayTwo"><span class="text">'+artText+'</span></span>';
+text+='</span>';
+
+text+= '<span class="container">';
+text+= '<a class="occupationTag"href='+link+'>coding ▼</a>';
+text+= '<span class="overlayThree"><span class="text">'+codingText+'</span></span>';
+text+='</span>';
+
+text+= '<div class="line3"></div>';
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</html>

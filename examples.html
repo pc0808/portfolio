@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+/*things to do: reverse button, cursor, cursor changes when hovering over button */
+
 div{
   font-size:98%;
   font-family: trebuchet ms;
@@ -252,8 +254,15 @@ var art=[
   {image: 'https://i.imgur.com/DGZIlp7.jpg', digTrad: 'dig', type: 'portrait'},
   {image: 'https://i.imgur.com/S4pIMqW.jpg', digTrad: 'dig', type: 'pose'},
   {image: 'https://i.imgur.com/fq5bBAi.jpg', digTrad: 'dig', type: 'pose'},
-
-  /*{image: '', digTrad: '', type: ''}*/
+  {image: 'https://i.imgur.com/SXrlxHW.jpg', digTrad: 'dig', type: 'scene'},
+  {image: 'https://i.imgur.com/PxMua8S.jpg', digTrad: 'trad', type: 'watercolor'},
+  {image: 'https://i.imgur.com/3Uafs9f.jpg', digTrad: 'trad', type: 'watercolor'},
+  {image: 'https://i.imgur.com/Bl9wY4D.jpg', digTrad: 'dig', type: 'character design & mixed media'},
+  {image: 'https://i.imgur.com/jrLloa6.jpg', digTrad: 'dig', type: 'pose'},
+  {image: 'https://i.imgur.com/DlBGH2l.jpg', digTrad: 'trad', type: 'fineliner'},
+  {image: 'https://i.imgur.com/ijXcyRn.jpg', digTrad: 'trad', type: 'sketch/watercolor'},
+  {image: 'https://i.imgur.com/MSdkcK1.jpg', digTrad: 'trad', type: 'perspective'},
+  /*{image: '', digTrad: '', type: ''},*/
 ];
 
 
@@ -285,9 +294,11 @@ var coding = [
     skills:'arrays/lists, for loops, search button, button extractions, innerHTML, console logs', link:'https://pc0808.github.io/webtoons/'},
   {title: 'my portfolio', image1: 'https://i.imgur.com/XgLuPyR.png', image2: 'https://i.imgur.com/L91Mw6X.png',
     description:'this is a portfolio display of some of the hobbies i partake in, such as graphic design, digital art and coding. i wanted to apply the coding i learned thus far towards a website where i worked individually.',
-    skills:'github pages, js animations, transitions, onclick functions', link:'https://pc0808.github.io/portfolio/'},
-
-  /*{title: '', image1: '', image2: '', description:'', skills learned:'', link:''},
+    skills:'github pages, js animations, transitions', link:'https://pc0808.github.io/portfolio/'},
+  {title: 'modern art', image1: 'https://i.imgur.com/tFkGVjg.png', image2: 'https://i.imgur.com/L1c0JJP.png',
+    description:'this is a very simple and interactive site meant to emulate the look of blocky modern art canvases.',
+    skills:'differences between postiion attributes, splicing, rgb color generator', link:'https://pc0808.github.io/modern-art/'},
+  /*{title: '', image1: '', image2: '', description:'', skills:'', link:''},
   */
 ];
 
@@ -403,6 +414,7 @@ codingContent += '</div>';
 codingContent += '<p><button class="reverse"style="display:none"id="codingReverse"';
 codingContent += 'onclick="reverseCoding()">compress examples';
 codingContent += '</button>';
+
 
 /* tabs + their styles/names */
 text ='<div style="margin-bottom:10%">';

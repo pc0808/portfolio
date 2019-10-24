@@ -198,7 +198,6 @@ blockquote{
 var i;
 var graphics = [
   {imageURL: 'https://i.imgur.com/eZzVyrp.png', type: 'poster'},
-  {imageURL: 'https://i.imgur.com/DosuhrK.jpg', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/ihPqoZD.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/IX6p4YP.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/saigGFf.png', type: 'infographic'},
@@ -208,14 +207,8 @@ var graphics = [
   {imageURL: 'https://i.imgur.com/yxkQBQU.jpg', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/gTNhLmx.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/CJkBWtn.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/xcd1XxW.jpg', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/nvSiByh.jpg', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/bOSnwPv.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/z2P0Wyi.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/h7Rn94x.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/SArnOOO.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/vrVAoA1.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/AYaeTEp.png', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/eVYisZb.jpg', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/C6tupte.jpg', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/xjo8Q3B.png', type: 'book cover'},
@@ -230,6 +223,23 @@ var graphics = [
   {imageURL: 'https://i.imgur.com/EOme6pj.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/wK1DybU.gif', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/iVrFFkf.png', type: 'wallpaper'},
+  {imageURL: 'https://i.imgur.com/qItV4RJ.png', type: 'book cover'},
+  {imageURL: 'https://i.imgur.com/LbCaXi1.jpg', type: 'book cover'},
+  {imageURL: 'https://i.imgur.com/umd1AW8.jpg', type: 'poster'},
+  {imageURL: 'https://i.imgur.com/1uL6JVo.png', type: 'book cover'},
+  {imageURL: 'https://i.imgur.com/kseAp3Z.png', type: 'poster'},
+  {imageURL: 'https://i.imgur.com/We3fbYH.png', type: 'wallpaper'},
+  {imageURL: 'https://i.imgur.com/rpwCh8B.jpg', type: 'wallpaper'},
+  {imageURL: 'https://i.imgur.com/4AbkgJH.png', type: 'wallpaper'},
+  {imageURL: 'https://i.imgur.com/9PezVkc.jpg', type: 'typography'},
+  {imageURL: 'https://i.imgur.com/uAAuMn6.png', type: 'infographic'},
+  {imageURL: 'https://i.imgur.com/UNXHN04.png', type: 'infographic'},
+  {imageURL: 'https://i.imgur.com/RZNN1fk.png', type: 'infographic'},
+  {imageURL: 'https://i.imgur.com/isyyuMl.jpg', type: 'infographic'},
+  {imageURL: 'https://i.imgur.com/bAdNMOn.png', type: 'infographic'},
+  {imageURL: 'https://i.imgur.com/u02GDja.jpg', type: 'infographic'},
+  {imageURL: 'https://i.imgur.com/DsyCnY6.jpg', type: 'infographic'},
+  /* {imageURL: 'link', type: ''}, */
 ];
 
 graphicsDisplay = '';
@@ -259,10 +269,22 @@ var art=[
   {image: 'https://i.imgur.com/3Uafs9f.jpg', digTrad: 'trad', type: 'watercolor'},
   {image: 'https://i.imgur.com/Bl9wY4D.jpg', digTrad: 'dig', type: 'character design & mixed media'},
   {image: 'https://i.imgur.com/jrLloa6.jpg', digTrad: 'dig', type: 'pose'},
-  {image: 'https://i.imgur.com/DlBGH2l.jpg', digTrad: 'trad', type: 'fineliner'},
-  {image: 'https://i.imgur.com/ijXcyRn.jpg', digTrad: 'trad', type: 'sketch/watercolor'},
-  {image: 'https://i.imgur.com/MSdkcK1.jpg', digTrad: 'trad', type: 'perspective'},
-  /*{image: '', digTrad: '', type: ''},*/
+  {image: 'https://i.imgur.com/DlBGH2l.jpg', digTrad: 'trad', type: 'fineliner + watercolor'},
+  {image: 'https://i.imgur.com/ijXcyRn.jpg', digTrad: 'trad', type: 'watercolor + sketches'},
+  {image: 'https://i.imgur.com/MSdkcK1.jpg', digTrad: 'trad', type: 'perspective sketch'},
+  {image: 'https://i.imgur.com/sPYGXKp.jpg', digTrad: 'trad', type: 'sketch + watercolor'},
+  {image: 'https://i.imgur.com/8zpJDb0.jpg', digTrad: 'trad', type: 'typography with watercolor'},
+  {image: 'https://i.imgur.com/V4sNO3B.jpg', digTrad: 'dig', type: 'pose'},
+  {image: 'https://i.imgur.com/iPFu0JD.jpg', digTrad: 'trad', type: 'watercolor'},
+  {image: 'https://i.imgur.com/nMwN5tR.jpg', digTrad: 'trad', type: 'ink'},
+  {image: 'https://i.imgur.com/vzetMiA.jpg', digTrad: 'trad', type: 'typography with ink'},
+  {image: 'https://i.imgur.com/K4TW5jt.jpg', digTrad: 'trad', type: 'watercolor'},
+  {image: 'https://i.imgur.com/ecm53Am.jpg', digTrad: 'trad', type: 'ink + watercolor'},
+  {image: 'https://i.imgur.com/7zK3NHs.jpg', digTrad: 'trad', type: 'oil'},
+  {image: 'https://i.imgur.com/vrU0evB.jpg', digTrad: 'dig', type: 'scene'},
+  {image: 'https://i.imgur.com/r48pLZm.jpg', digTrad: 'trad', type: 'character design with ink + watercolor'},
+  {image: 'https://i.imgur.com/w1HmiYE.jpg', digTrad: 'trad', type: 'sketch'},
+/*  {image: '', digTrad: '', type: ''}, */
 ];
 
 

@@ -86,7 +86,7 @@ blockquote{
 }
 .introSpan{
   background: #111;
-  padding:9px;
+  padding:5px 0 5px;
   font-weight: bold;
   font-size: 110%;
   position: fixed;
@@ -227,6 +227,10 @@ blockquote{
 .content{
   transition: 1s ease;
 }a:hover{cursor:cell}
+.blinker{
+  filter:invert(100%);
+  opacity:100%
+}
 </style>
 </head>
 <body>
@@ -237,7 +241,9 @@ blockquote{
       <div style="border:solid #444;border-width:0 1px;padding:0 35%">
       <div class="content"style="margin:0 -200% 0 -200%;padding:390.5% 0;background:0">
   <div id="startPage"style="display: block;background:0">
-<span class="prompter">start? <img src="https://i.imgur.com/hQ1USaa.gif"height="20px"width="2px"></span>
+<span class="prompter">start?<img class="blinker"src=
+  "http://www.astrocityamusements.co.uk/communities/7/004/013/367/957//images/4632120752.gif"
+  height="20px"></span>
 <p><button class="startYes" onclick="toggleText()">yes
   </button>
 </div></div>
@@ -303,7 +309,7 @@ text+= '<span class="actualDesc">'+descText+'</span>';
 text+= '<span class="descOverlay"><span class="text"><span class="descMargin">'+descHoverText+'</span></span></span>';
 text+= '</span>';
 
-link = "/portfolio/examples.html";
+link = "file:///Users/chowdhury/Documents/riya%20html/portfolio/examples.html";
 text+= '<span class="container">';
 text+= '<a class="occupationTag"href='+link+'>graphic design ▼</a>'
 text+= '<span class="overlay"><span class="text">'+graphicText+'</span></span>';

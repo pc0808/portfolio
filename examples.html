@@ -273,7 +273,6 @@ var art=[
   {image: 'https://pbs.twimg.com/media/Ec022JyWkAI1jVy?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
   {image: 'https://i.imgur.com/PxMua8S.jpg', digTrad: 'trad', type: 'watercolor'},
   {image: 'https://i.imgur.com/3Uafs9f.jpg', digTrad: 'trad', type: 'watercolor'},
-  {image: 'https://pbs.twimg.com/media/Ec022JzXYAAvucJ?format=jpg&name=large', digTrad: 'dig', type: 'pose + screenshot redraw'},
   {image: 'https://pbs.twimg.com/media/Ec022JyXsAENht1?format=jpg&name=large', digTrad: 'dig', type: 'scene'},
   {image: 'https://i.imgur.com/DlBGH2l.jpg', digTrad: 'trad', type: 'fineliner + watercolor'},
   {image: 'https://i.imgur.com/ijXcyRn.jpg', digTrad: 'trad', type: 'watercolor + sketches'},
@@ -287,13 +286,10 @@ var art=[
   {image: 'https://i.imgur.com/K4TW5jt.jpg', digTrad: 'trad', type: 'watercolor'},
   {image: 'https://i.imgur.com/ecm53Am.jpg', digTrad: 'trad', type: 'ink + watercolor'},
   {image: 'https://i.imgur.com/7zK3NHs.jpg', digTrad: 'trad', type: 'oil'},
-  {image: 'https://pbs.twimg.com/media/EjsbTzrXgAAuqXT?format=jpg&name=large', digTrad: 'dig', type: 'sketch, character design'},
   {image: 'https://i.imgur.com/w1HmiYE.jpg', digTrad: 'trad', type: 'sketch'},
   {image: 'https://i.imgur.com/IyaTED6.jpg', digTrad: 'trad', type: 'sketches'},
   {image: 'https://pbs.twimg.com/media/EjnggMKXcAEnTjW?format=jpg&name=large', digTrad: 'dig', type: 'pose, character design sketch'},
   {image: 'https://pbs.twimg.com/media/Edj5Q8KX0AEZmcm?format=jpg&name=large', digTrad: 'dig', type: 'scene'},
-  {image: 'https://pbs.twimg.com/media/EeR5ob5WAAAe5KN?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
-  {image: 'https://pbs.twimg.com/media/Et-1__yXUAYhGut?format=jpg&name=large', digTrad: 'dig', type: 'observational sketches'},
   {image: 'https://pbs.twimg.com/media/EtMEyorWgAAXui3?format=jpg&name=large', digTrad: 'dig', type: 'watercolor painting'},
   {image: 'https://i.imgur.com/Ha7PNlv.jpg', digTrad: 'trad', type: 'watercolor scene'},
   {image: 'https://pbs.twimg.com/media/Es8YJxzXYBQUHpf?format=jpg&name=large', digTrad: 'dig', type: 'sketches'},
@@ -309,14 +305,6 @@ for (i =0; i< art.length; i++){
     digArtDisplay += '<div class="contentType"><a href="'+art[i].image+'">';
     digArtDisplay += art[i].type+'</a></div>';
     digArtDisplay += '</div></div><br>';
-  }
-  if(art[i].digTrad == "trad"){
-    tradArtDisplay += '<div class="container">';
-    tradArtDisplay += '<img class="imageStyle"src="'+art[i].image;
-    tradArtDisplay += '"><div class="overlay">';
-    tradArtDisplay += '<div class="contentType"><a href="'+art[i].image+'">';
-    tradArtDisplay += art[i].type+'</a></div>';
-    tradArtDisplay += '</div></div><br>';
   }
 }
 
@@ -412,7 +400,7 @@ graphicsContent += '</button>';
 
 /* art tab */
 digitalArtText ="<p><b>program: </b>procreate app on ipad pro";
-digitalArtText +='<br><b>experience: </b>2.5 years, done sporadically</p>';
+digitalArtText +='<br><b>experience: </b>4 years, done sporadically</p>';
 
 digitalArt ='<div class="textStyle"id="textStyle2">'+digitalArtText+'</div>';
 digitalArt += '<button class="coll2"onclick="moveText2()"';
@@ -421,17 +409,9 @@ digitalArt += '<div class="content"id="imageDiv2">'+digArtDisplay;
 digitalArt += '</div>';
 
 
-tradArtText ="<b>mediums: </b>graphite pencil, watercolor, oil paints, calligraphy";
-
-tradArt ='<div class="textStyle"id="textStyle3">'+tradArtText+'</div>';
-tradArt += '<button class="collapsible"onclick="moveText3()"';
-tradArt += 'id="imageButton3">examples</button>';
-tradArt += '<div class="content"id="imageDiv3">'+tradArtDisplay;
-tradArt += '</div>';
-
 /*coding tab*/
 codingContentText = '<p><B>languages: </b>html, css javascript, python';
-codingContentText += '<br><B>experience: </b>5 years in html/css, about 2 years in javascript/python, over 1 year in c++</p>';
+codingContentText += '<br><B>experience: </b>almost 6 years in html/css, about 3 years in javascript/python, almost 2 years in c++</p>';
 
 ccOverText = 'i am pursuing coding ';
 ccOverText += 'in university because there is still a lot for me learn.';

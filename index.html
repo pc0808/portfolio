@@ -227,9 +227,18 @@ blockquote{
 .content{
   transition: 1s ease;
 }a:hover{cursor:cell}
+
+@keyframes blink {
+  0%   {background-color: white;}
+  50%  {background-color: #444;}
+}
 .blinker{
-  filter:invert(100%);
-  opacity:100%
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 </style>
 </head>
@@ -241,9 +250,10 @@ blockquote{
       <div style="border:solid #444;border-width:0 1px;padding:0 35%">
       <div class="content"style="margin:0 -200% 0 -200%;padding:390.5% 0;background:0">
   <div id="startPage"style="display: block;background:0">
-<span class="prompter">start?<img class="blinker"src=
-  "http://www.astrocityamusements.co.uk/communities/7/004/013/367/957//images/4632120752.gif"
-  height="20px"></span>
+
+<div class="prompter">start?
+<span style="display:inline-block;" class="blinker" height="20px"></span></div>
+
 <p><button class="startYes" onclick="toggleText()">yes
   </button>
 </div></div>

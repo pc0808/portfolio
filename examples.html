@@ -175,9 +175,17 @@ blockquote{
   font-size: 20px;
   border: solid 1px #444;
 }
+@keyframes blink {
+  0%   {background-color: white;}
+  50%  {background-color: #444;}
+}
 .blinker{
-  filter:invert(100%);
-  opacity:100%
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 </style>
 </head>
@@ -190,20 +198,33 @@ blockquote{
       <div style="margin:0 -200% 0 -200%;padding:390% 0;background:0;">
 
   <div id="startPage"style="display: block;background:0">
-<span class="prompter">continue?<img class="blinker"src=
-  "http://www.astrocityamusements.co.uk/communities/7/004/013/367/957//images/4632120752.gif"
-  height="20px"></span>
+  
+<div class="prompter">start?
+<span style="display:inline-block;" class="blinker" height="20px"></span></div>
+
 <p><button class="startYes" onclick="toggleText()">yes
   </button>
 </div></div>
 <div id="demo"class="entireContent">
 </div>
 </div></div></div></div>
+
+
 </body>
 <script>
 var i;
 var graphics = [
   {imageURL: 'https://i.imgur.com/eZzVyrp.png', type: 'poster'},
+  {imageURL: 'https://i.imgur.com/Y0oZIiu.png', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/VUx4SF5.jpeg', type: 'letterhead'},
+  {imageURL: 'https://i.imgur.com/uUF0eVs.jpeg', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/mLYI7HQ.jpeg', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/Zger7EJ.jpeg', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/QZpXhoD.png', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/lsrsV1W.png', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/3W8tweQ.png', type: 'web layout'},
+  {imageURL: 'https://i.imgur.com/1f6ccjK.png', type: 'design element'},
+  {imageURL: 'https://i.imgur.com/Z5Ziqg8.jpeg', type: 'letterhead'},
   {imageURL: 'https://i.imgur.com/ihPqoZD.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/IX6p4YP.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/saigGFf.png', type: 'infographic'},
@@ -272,11 +293,12 @@ var art=[
   {image: 'https://pbs.twimg.com/media/ElMKZxJWAAIAjbi?format=jpg&name=large', digTrad: 'dig', type: 'portrait'},
   {image: 'https://pbs.twimg.com/media/Ec022JxX0AUopUx?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
   {image: 'https://pbs.twimg.com/media/E57TExNVcAQ98zM?format=jpg&name=large', digTrad: 'dig', type: 'scene, pose'},
+  {image: 'https://i.imgur.com/5uy8UYy.jpeg', digTrad: 'dig', type: 't-shirt design'},
   {image: 'https://pbs.twimg.com/media/Ec022JyWkAI1jVy?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
   {image: 'https://i.imgur.com/PxMua8S.jpg', digTrad: 'trad', type: 'watercolor'},
   {image: 'https://i.imgur.com/3Uafs9f.jpg', digTrad: 'trad', type: 'watercolor'},
   {image: 'https://pbs.twimg.com/media/Ec022JyXsAENht1?format=jpg&name=large', digTrad: 'dig', type: 'scene'},
-    {image: 'https://pbs.twimg.com/media/E1zWPJIWYAYzlTN?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
+  {image: 'https://pbs.twimg.com/media/E1zWPJIWYAYzlTN?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
   {image: 'https://i.imgur.com/DlBGH2l.jpg', digTrad: 'trad', type: 'fineliner + watercolor'},
   {image: 'https://i.imgur.com/ijXcyRn.jpg', digTrad: 'trad', type: 'watercolor + sketches'},
   {image: 'https://i.imgur.com/MSdkcK1.jpg', digTrad: 'trad', type: 'perspective sketch'},
@@ -292,9 +314,14 @@ var art=[
   {image: 'https://i.imgur.com/w1HmiYE.jpg', digTrad: 'trad', type: 'sketch'},
   {image: 'https://i.imgur.com/IyaTED6.jpg', digTrad: 'trad', type: 'sketches'},
   {image: 'https://pbs.twimg.com/media/EjnggMKXcAEnTjW?format=jpg&name=large', digTrad: 'dig', type: 'pose, character design sketch'},
-    {image: 'https://pbs.twimg.com/media/EzRaavCVEAUw6eX?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
+  {image: 'https://pbs.twimg.com/media/EzRaavCVEAUw6eX?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
   {image: 'https://pbs.twimg.com/media/EtMEyorWgAAXui3?format=jpg&name=large', digTrad: 'dig', type: 'watercolor painting'},
   {image: 'https://i.imgur.com/Ha7PNlv.jpg', digTrad: 'trad', type: 'watercolor scene'},
+  {image: 'https://i.imgur.com/iHkGlwZ.png', digTrad: 'dig', type: 'sketches'},
+  {image: 'https://i.imgur.com/pd24tZY.jpeg', digTrad: 'dig', type: 'illustration'},
+  {image: 'https://i.imgur.com/bsXsO9q.jpeg', digTrad: 'dig', type: 'mural'},
+  {image: 'https://i.imgur.com/wdWehmt.png', digTrad: 'dig', type: 'illustration, character design'},
+  {image: 'https://i.imgur.com/RkdnEQr.png', digTrad: 'dig', type: 'illustration, semi-realism study'},
  
 /*  {image: '', digTrad: '', type: ''}, */
 ];
@@ -380,7 +407,7 @@ grayColor ="'#111'";
 
 /* graphics tab */
 graphicsContentText = '<p><b>programs: </b>photoshop, picsart, adobe premiere pro';
-graphicsContentText += '<br><b>experience:</b> about 6 years (since november 2015)';
+graphicsContentText += '<br><b>experience:</b> over 6 years (since november 2015)';
 graphicsContentText += '<br>this is a culmination of my best works; <b>none</b> are used for commercial purposes</p>';
 graphicsContentText += '<p>many of these are requests, so the subjects depicted on ';
 graphicsContentText+= 'them are not a reflection of me and my interests/values</p>';
@@ -414,7 +441,7 @@ digitalArt += '</div>';
 
 /*coding tab*/
 codingContentText = '<p><B>languages: </b>html, css javascript, python';
-codingContentText += '<br><B>experience: </b>almost 6 years in html/css, about 3 years in javascript/python, almost 2 years in c++</p>';
+codingContentText += '<br><B>experience: </b>almost 6 years in html/css, about 3 years in javascript/python, 2 years in c++</p>';
 
 ccOverText = 'i am pursuing coding ';
 ccOverText += 'in university because there is still a lot for me learn.';

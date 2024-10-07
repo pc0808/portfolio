@@ -92,7 +92,7 @@ blockquote{
   transition: 0.5s ease-out;
 }
 #about{
-  border-left: solid 1px #fff;
+  border-left: solid 0.5px #FAD02C;
   margin-top: -1%;
 }
 .textStyle{
@@ -100,7 +100,10 @@ blockquote{
 }.textStyle:hover {cursor: cell;}
 .aboutLink{
   padding-right: 10px;
-  color: #444
+  color: #444;
+}
+.aboutLink:hover{
+  color: #FAD02C;
 }
 .imageStyle{
   width:79%;
@@ -380,13 +383,15 @@ function openTab(tabName, elmnt, color) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
     tablinks[i].style.border = "0";
+    tablinks[i].style.color = '#fff';
   }
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
   document.getElementById(tabName).style.display = "block";
-  elmnt.style.backgroundColor = color;
-  elmnt.style.border = "solid 1px #444";
+  elmnt.style.backgroundColor = grayColor;
+  elmnt.style.color = color; 
+  elmnt.style.border = "solid 1px #FAD02C";
 }
 
 textOverlayBegin= '<span class="container">';
@@ -398,6 +403,7 @@ g = "'graphics'";
 c = "'coding'";
 a = "'art'";
 grayColor ="'#111'";
+yellowColor ="'#FAD02C'"
 
 /* about me tab*/
 links = [
@@ -413,14 +419,14 @@ aboutContentText += "which helped nurture my sense of style when it comes to HTM
 aboutContentText += "I am also passionate about my hobby in <u><i>digital art</i></u>, an extension of my design background."
 aboutContentText += "<p>In total, i have almost 8 years of experience amongst all 3 fields."
 
-aboutLinks = '<span style="text=emphasis: bold">LINKS</span>: '
+aboutLinks = '<span style="text=emphasis: bold; color: #FAD02C">LINKS</span>     ▷ '
 for(const link of links){
   aboutLinks += '<a class="aboutLink"href = "'+link.link+'">'+link.text+'</a>';
 }
 
 aboutContent ='<div class="textStyle">';
 aboutContent += aboutContentText+'</div>';
-aboutContent+='<div class="aboutLinks">'+aboutLinks+'</div>';
+aboutContent+='<div style="font-size:16px;margin-top:4%">'+aboutLinks+'</div>';
 
 /* graphics tab */
 graphicsContentText = '<p><b>programs: </b>photoshop, picsart, adobe premiere pro';
@@ -480,10 +486,11 @@ codingContent += '</button>';
 
 /* tabs + their styles/names */
 text ='<div style="margin-bottom:10%">';
-text+='<button class="tabStyle"id="aboutTab"style="background:#111;border:solid 1px #444"onclick="openTab('+am+', this, '+grayColor+')">about me</button>';
-text+='<button class="tabStyle" id="codingTab"onclick="openTab('+c+', this, '+grayColor+')">coding</button>';
-text+='<button class="tabStyle" id="graphicsTab"onclick="openTab('+g+', this, '+grayColor+')">graphics</button>';
-text+='<button class="tabStyle"id="artTab"onclick="openTab('+a+', this, '+grayColor+')">art</button>';
+text+='<button class="tabStyle"id="aboutTab"style="background:#111; color:#FAD02C; border:solid 1px #FAD02C;"'
+text+='onclick="openTab('+am+', this, '+yellowColor+')">about me</button>';
+text+='<button class="tabStyle" id="codingTab"onclick="openTab('+c+', this, '+yellowColor+')">coding</button>';
+text+='<button class="tabStyle" id="graphicsTab"onclick="openTab('+g+', this, '+yellowColor+')">graphics</button>';
+text+='<button class="tabStyle"id="artTab"onclick="openTab('+a+', this, '+yellowColor+')">art</button>';
 text+='</div>';
 
 /*stuff inside the tabs*/

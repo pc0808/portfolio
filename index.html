@@ -280,67 +280,37 @@ for(var i = 0; i < graphics.length ; i++){
 
 
 digArtDisplay ='';
-tradArtDisplay = '';
-var art=[
-  {image: 'https://i.imgur.com/sqaRGVl.jpeg', digTrad: 'trad', type: 'semi-realism'},
-  {image: 'https://i.imgur.com/P00a2wP.jpeg', digTrad: 'trad', type: 'portrait'},
-    
-  {image: 'https://i.imgur.com/kBk8yPs.jpeg', digTrad: 'dig', type: 'study'},
-  {image: 'https://i.imgur.com/0Rpv1Qy.jpeg', digTrad: 'dig', type: 'painting render'},
-  {image: 'https://i.imgur.com/ebnHf3m.jpeg', digTrad: 'dig', type: 'character design'},
-    
-  // {image: 'https://pbs.twimg.com/media/E8BdE7KVUAM3Pv_?format=jpg&name=large', digTrad: 'dig', type: 'concept art'},
-  // {image: 'https://pbs.twimg.com/media/EyEGUhsW8AEtC6V?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
-  // {image: 'https://i.imgur.com/FvywSE9.jpg', digTrad: 'dig', type: 'portrait illustration'},
-  // {image: 'https://i.imgur.com/Q0MBFJx.jpg', digTrad: 'trad', type: 'mixed media'},
-  // {image: 'https://i.imgur.com/DPK3iHW.png', digTrad: 'trad', type: 'watercolor'},
-  // {image: 'https://i.imgur.com/y4s3WQh.jpg', digTrad: 'trad', type: 'watercolor'},
-  // {image: 'https://pbs.twimg.com/media/ElMKZxJWAAIAjbi?format=jpg&name=large', digTrad: 'dig', type: 'portrait'},
-  // {image: 'https://pbs.twimg.com/media/Ec022JxX0AUopUx?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
-  // {image: 'https://pbs.twimg.com/media/E57TExNVcAQ98zM?format=jpg&name=large', digTrad: 'dig', type: 'scene, pose'},
-  // {image: 'https://i.imgur.com/5uy8UYy.jpeg', digTrad: 'dig', type: 't-shirt design'},
-  // {image: 'https://pbs.twimg.com/media/Ec022JyWkAI1jVy?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
-  // {image: 'https://i.imgur.com/PxMua8S.jpg', digTrad: 'trad', type: 'watercolor'},
-  // {image: 'https://i.imgur.com/3Uafs9f.jpg', digTrad: 'trad', type: 'watercolor'},
-  // {image: 'https://pbs.twimg.com/media/Ec022JyXsAENht1?format=jpg&name=large', digTrad: 'dig', type: 'scene'},
-  // {image: 'https://pbs.twimg.com/media/E1zWPJIWYAYzlTN?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
-  // {image: 'https://i.imgur.com/DlBGH2l.jpg', digTrad: 'trad', type: 'fineliner + watercolor'},
-  // {image: 'https://i.imgur.com/ijXcyRn.jpg', digTrad: 'trad', type: 'watercolor + sketches'},
-  // {image: 'https://i.imgur.com/MSdkcK1.jpg', digTrad: 'trad', type: 'perspective sketch'},
-  // {image: 'https://i.imgur.com/sPYGXKp.jpg', digTrad: 'trad', type: 'sketch + watercolor'},
-  // {image: 'https://i.imgur.com/8zpJDb0.jpg', digTrad: 'trad', type: 'typography with watercolor'},
-  // {image: 'https://pbs.twimg.com/media/ElisI-jW0AE1fIP?format=jpg&name=large', digTrad: 'dig', type: 'pose, character design'},
-  // {image: 'https://i.imgur.com/iPFu0JD.jpg', digTrad: 'trad', type: 'watercolor'},
-  // {image: 'https://i.imgur.com/nMwN5tR.jpg', digTrad: 'trad', type: 'ink'},
-  // {image: 'https://i.imgur.com/vzetMiA.jpg', digTrad: 'trad', type: 'typography with ink'},
-  // {image: 'https://i.imgur.com/K4TW5jt.jpg', digTrad: 'trad', type: 'watercolor'},
-  // {image: 'https://i.imgur.com/ecm53Am.jpg', digTrad: 'trad', type: 'ink + watercolor'},
-  // {image: 'https://i.imgur.com/7zK3NHs.jpg', digTrad: 'trad', type: 'oil'},
-  // {image: 'https://i.imgur.com/w1HmiYE.jpg', digTrad: 'trad', type: 'sketch'},
-  // {image: 'https://i.imgur.com/IyaTED6.jpg', digTrad: 'trad', type: 'sketches'},
-  // {image: 'https://pbs.twimg.com/media/EjnggMKXcAEnTjW?format=jpg&name=large', digTrad: 'dig', type: 'pose, character design sketch'},
-  // {image: 'https://pbs.twimg.com/media/EzRaavCVEAUw6eX?format=jpg&name=large', digTrad: 'dig', type: 'pose'},
-  // {image: 'https://pbs.twimg.com/media/EtMEyorWgAAXui3?format=jpg&name=large', digTrad: 'dig', type: 'watercolor painting'},
-  // {image: 'https://i.imgur.com/Ha7PNlv.jpg', digTrad: 'trad', type: 'watercolor scene'},
-  // {image: 'https://i.imgur.com/iHkGlwZ.png', digTrad: 'dig', type: 'sketches'},
-  // {image: 'https://i.imgur.com/pd24tZY.jpeg', digTrad: 'dig', type: 'illustration'},
-  // {image: 'https://i.imgur.com/bsXsO9q.jpeg', digTrad: 'dig', type: 'mural'},
-  // {image: 'https://i.imgur.com/wdWehmt.png', digTrad: 'dig', type: 'illustration, character design'},
-  // {image: 'https://i.imgur.com/RkdnEQr.png', digTrad: 'dig', type: 'illustration, semi-realism study'},
- 
-/*  {image: '', digTrad: '', type: ''}, */
+var art=[    
+  {image: 'images/art/karina.jpg',  type: 'realism study'},
+  {image: 'images/art/lehenga.png',  type: 'ilustration'},
+  {image: 'images/art/luna2.jpg',  type: 'clothing study'},
+  {image: 'images/art/mamianqun.png',  type: 'character design'},
+  {image: 'images/art/phoenix.png',  type: 'merchandise design'},
+  {image: 'images/art/rhaegar.jpg',  type: 'illustration'},
+  {image: 'images/art/shay.jpg',  type: 'clothing study'},
+  {image: 'images/art/wonbin1.jpg',  type: 'illustration'},
+  {image: 'images/art/wonbin2.jpg',  type: 'realism study'},
+  {image: 'images/art/wonbin3.jpg',  type: 'clothing study'},
+
+  {image: 'https://i.imgur.com/0Rpv1Qy.jpeg', type: 'painting render'},
+  {image: 'https://pbs.twimg.com/media/E8BdE7KVUAM3Pv_?format=jpg&name=large', type: 'concept art'},
+  {image: 'https://pbs.twimg.com/media/EyEGUhsW8AEtC6V?format=jpg&name=large', type: 'pose'},
+  {image: 'https://i.imgur.com/FvywSE9.jpg', type: 'portrait illustration'},
+  {image: 'https://pbs.twimg.com/media/EtMEyorWgAAXui3?format=jpg&name=large', type: 'watercolor painting'},
+  {image: 'https://i.imgur.com/Ha7PNlv.jpg', type: 'watercolor scene'},
+  {image: 'https://i.imgur.com/bsXsO9q.jpeg', type: 'mural'}, 
+  {image: 'images/art/dae.jpg',  type: 'character design'},
+/*  {image: '',  type: ''}, */
 ];
 
 
 for (i =0; i< art.length; i++){
-  if (art[i].digTrad == "dig"){
-    digArtDisplay += '<div class="container">';
-    digArtDisplay += '<img class="imageStyle"src="'+art[i].image;
-    digArtDisplay += '"><div class="overlay">';
-    digArtDisplay += '<div class="contentType"><a href="'+art[i].image+'">';
-    digArtDisplay += art[i].type+'</a></div>';
-    digArtDisplay += '</div></div><br>';
-  }
+  digArtDisplay += '<div class="container">';
+  digArtDisplay += '<img class="imageStyle"src="'+art[i].image;
+  digArtDisplay += '"><div class="overlay">';
+  digArtDisplay += '<div class="contentType"><a href="'+art[i].image+'">';
+  digArtDisplay += art[i].type+'</a></div>';
+  digArtDisplay += '</div></div><br>';
 }
 
 var coding = [
@@ -466,13 +436,11 @@ graphicsContent += '<div class="content"id="imageDiv">'+graphicsDisplay+'</div>'
 
 
 /* art tab */
-digitalArtText ="<p><b>program: </b>procreate app on ipad pro";
-digitalArtText +='<br><b>experience: </b>4 years, done sporadically</p>';
+digitalArtText = '<span class="codeHeader"style="font-size:16px">Program </span>▷ Procreate app on iPad Pro ';
+digitalArtText +='<span class="codeHeader"style="font-size:16px;margin-left:4%"> Experience </span>▷ 5 years+';
 
-digitalArt ='<div class="textStyle"id="textStyle2">'+digitalArtText+'</div>';
-digitalArt += '<button class="coll2"onclick="moveText2()"';
-digitalArt += 'id="imageButton2">examples</button>';
-digitalArt += '<div class="content"id="imageDiv2">'+digArtDisplay;
+digitalArt ='<div class="aboutLinks"style="margin:0 0 1% -31px; font-size:14px">'+digitalArtText+'</div>';
+digitalArt += '<div class="content"id="imageDiv2" style="margin-top:4%">'+digArtDisplay;
 digitalArt += '</div>';
 
 
@@ -514,8 +482,7 @@ text+='<div id="graphics" class="tabContent"style="display:none;margin:-5% 0 -8%
 text+=graphicsContent+'</div>';
 
 text+='<div id="art" class="tabContent" style="display:none;margin:-5% 0 -8% 25px">';
-text+='<h2 id ="digArtHeader">digital art</h2><p>'+digitalArt+'</p>';
-text+='</div>';
+text+=digitalArt+'</div>';
 
 document.getElementById("demo").innerHTML = text;
 

@@ -103,7 +103,10 @@ blockquote{
   transition: 0.5s ease-out;
 }
 #about{
-  margin: -3% 0 0 -3%;
+  margin: -4% 0 0 2.2%;
+  padding: 2% 3%;
+  border: solid 1px #444;
+  background-color: #111;
 }
 #textStyle4{
   margin-left: -4%;
@@ -131,21 +134,15 @@ blockquote{
 .imageStyle{
   width:79%;
   border: solid 1px #444;
-  background: #111;
   padding: 10%;
-  opacity: 0.7
-}
-.imageStyle:hover{
-  opacity:1.0
 }
 .content{
-  display:none;
   overflow: hidden;
   column-count: 3;
   column-gap: 3%;
   transition: 1.0s ease-out;
   overflow: hidden;
-  margin: 10% -25px 0;
+  margin: 1.5% 0 0 -31px;
   height:10%;
 }.codingContent{
   overflow: hidden;
@@ -185,7 +182,6 @@ blockquote{
   opacity: 1.0;
 }.codingImage{
   width:50%;
-  opacity: 0.7
 }.codeTitle{
   font-weight: bold;
   font-size: 18px;
@@ -237,8 +233,8 @@ var i;
 var graphics = [
   {imageURL: 'mockup.jpg', type: 'web layout'},
   {imageURL: 'project_tab.jpg', type: 'web layout'},
-  {imageURL: 'https://i.imgur.com/eZzVyrp.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/Y0oZIiu.png', type: 'web layout'},
+  {imageURL: 'images/graphics/mockup_interact.jpg', type: 'web layout + interaction'},
   {imageURL: 'https://i.imgur.com/VUx4SF5.jpeg', type: 'letterhead'},
   {imageURL: 'https://i.imgur.com/uUF0eVs.jpeg', type: 'web layout'},
   {imageURL: 'https://i.imgur.com/mLYI7HQ.jpeg', type: 'web layout'},
@@ -248,46 +244,25 @@ var graphics = [
   {imageURL: 'https://i.imgur.com/3W8tweQ.png', type: 'web layout'},
   {imageURL: 'https://i.imgur.com/1f6ccjK.png', type: 'design element'},
   {imageURL: 'https://i.imgur.com/Z5Ziqg8.jpeg', type: 'letterhead'},
-  {imageURL: 'https://i.imgur.com/ihPqoZD.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/IX6p4YP.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/saigGFf.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/XQ1y9KO.png', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/kJ1x4ov.png', type: 'wallpaper'},
-  {imageURL: 'https://i.imgur.com/JySLcLJ.jpg', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/yxkQBQU.jpg', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/gTNhLmx.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/CJkBWtn.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/h7Rn94x.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/SArnOOO.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/eVYisZb.jpg', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/C6tupte.jpg', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/xjo8Q3B.png', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/Bq2VKDf.png', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/iQRaEKp.png', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/25PPHUF.jpg', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/ywX7a2B.png', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/7rZGFxJ.png', type: 'poster'},
-  {imageURL: 'https://i.imgur.com/kRPa4li.png', type: 'poster'},
-  {imageURL: 'https://i.imgur.com/4zvHG1f.png', type: 'poster'},
-  {imageURL: 'https://i.imgur.com/mfb1OUi.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/EOme6pj.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/wK1DybU.gif', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/iVrFFkf.png', type: 'wallpaper'},
-  {imageURL: 'https://i.imgur.com/qItV4RJ.png', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/LbCaXi1.jpg', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/umd1AW8.jpg', type: 'poster'},
   {imageURL: 'https://i.imgur.com/1uL6JVo.png', type: 'book cover'},
-  {imageURL: 'https://i.imgur.com/kseAp3Z.png', type: 'poster'},
   {imageURL: 'https://i.imgur.com/We3fbYH.png', type: 'wallpaper'},
-  {imageURL: 'https://i.imgur.com/rpwCh8B.jpg', type: 'wallpaper'},
   {imageURL: 'https://i.imgur.com/4AbkgJH.png', type: 'wallpaper'},
-  {imageURL: 'https://i.imgur.com/9PezVkc.jpg', type: 'typography'},
   {imageURL: 'https://i.imgur.com/uAAuMn6.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/UNXHN04.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/RZNN1fk.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/isyyuMl.jpg', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/bAdNMOn.png', type: 'infographic'},
-  {imageURL: 'https://i.imgur.com/u02GDja.jpg', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/DsyCnY6.jpg', type: 'infographic'},
   /* {imageURL: 'link', type: ''}, */
 ];
@@ -404,14 +379,14 @@ codingDisplay = '';
 
 for(var i = 0; i < coding.length ; i++){
   codingDisplay += '<div class="container">';
-  codingDisplay += '<div style="border:solid 1px #444;padding: 2.5%;background:#111;display:flex">';
+  codingDisplay += '<div style="border:solid 1px #444;padding: 2.5%;display:flex">';
   codingDisplay += '<img class="codingImage"src="'+coding[i].image1+'">';
   codingDisplay += '<img class="codingImage"src="'+coding[i].image2+'"></div>';
   codingDisplay += '<div class="overlay"><div class="codingContentType"><a href="'+coding[i].link+'">';
   codingDisplay += '<span class="codeTitle">'+coding[i].title+'</span><p>';
-  codingDisplay += '<span class="codeHeader">Languages ▷ </span>'+coding[i].languages+'<p>';
-  codingDisplay += '<span class="codeHeader">Notable Features ▷ </span>'+coding[i].features+'<p>';
-  codingDisplay += '<span class="codeHeader">Description ▷ </span>'+coding[i].description;
+  codingDisplay += '<span class="codeHeader">Languages </span>▷ '+coding[i].languages+'<p>';
+  codingDisplay += '<span class="codeHeader">Notable Features </span>▷ '+coding[i].features+'<p>';
+  codingDisplay += '<span class="codeHeader">Description </span>▷ '+coding[i].description;
   codingDisplay += '</a></p></div>';
   codingDisplay += '</div></div><br>';
 }
@@ -452,7 +427,7 @@ links = [
   {text: "Linkedin", link: "https://www.linkedin.com/in/promia-chowdhury/"},
 ];
 
-aboutContentText = "I am a 2024 BS graduate from MIT who majored in <u><i>Computer Science</i></u> and minored in Mathematics. ";
+aboutContentText = "I am a 2024 graduate from MIT with a BS in <u><i>Computer Science</i></u> and minored in Mathematics. ";
 aboutContentText += "I am currently looking for opportunities in <u><i>frontend or full-stack software engineering</i></u>, ";
 aboutContentText += "in order to bring to life my desire to create a larger space for human-made art and design in technology.<p>"
 aboutContentText += "My studies in Computer Science arose from my partipation in a <u><i>graphic design</i></u> community, ";
@@ -470,26 +445,24 @@ aboutContent += aboutContentText+'</div>';
 aboutContent+='<div class="aboutLinks">'+aboutLinks+'</div>';
 
 /* graphics tab */
-graphicsContentText = '<p><b>programs: </b>photoshop, picsart, adobe premiere pro';
-graphicsContentText += '<br><b>experience:</b> over 6 years (since november 2015)';
-graphicsContentText += '<br>this is a culmination of my best works; <b>none</b> are used for commercial purposes</p>';
-graphicsContentText += '<p>many of these are requests, so the subjects depicted on ';
-graphicsContentText+= 'them are not a reflection of me and my interests/values</p>';
+graphicsContentText = '<div style="column-count: 2;margin-left: -31px;">';
+graphicsContentText += '<div class="aboutLinks"style="padding:1%; margin-top:0"><p><ul>Programs ▷';
+graphicsContentText += '<li>Adobe Photoshop</li>';
+graphicsContentText += '<li>Adobe Illustrate</li>';
+graphicsContentText += '<li>Procreate</li>';
+graphicsContentText += '<li>Adobe Premiere Pro</li></ul></div>';
+graphicsContentText += '<div class="aboutLinks"style="padding:2% 3%; font-size: 13px">';
+graphicsContentText += 'This is a culmination of my best works; <b>none</b> are used for commercial purposes.';
+graphicsContentText += '<p>Many of these works are requests/commissions, so the subjects depicted on ';
+graphicsContentText+= 'them are not a reflection of me and my interests/values.</p>';
+graphicsContentText += '</div>';
 
 gcOverText = 'graphic design has enabled me to transition very quickly to coding';
 
-graphicsContent ='<div class="textStyle"id="textStyle">';
-graphicsContent += textOverlayBegin+graphicsContentText+'</span>'+textOverlayMiddle+gcOverText;
-graphicsContent += textOverlayEnd+'</div>';
+graphicsContent ='<div class="textStyle"id="textStyle"'
+graphicsContent += graphicsContentText+'</div>';
 
-graphicsContent += '<button class="collapsible"onclick="moveText()"';
-graphicsContent += 'id="imageButton">examples</button>';
-graphicsContent += '<div class="content"id="imageDiv">'+graphicsDisplay;
-graphicsContent += '</div>';
-graphicsContent += '<button class="reverse"style="display:none"id="graphicsReverse"';
-graphicsContent += 'onclick="reverseGraphics()">compress examples';
-graphicsContent += '</button>';
-
+graphicsContent += '<div class="content"id="imageDiv">'+graphicsDisplay+'</div>';
 
 
 /* art tab */
@@ -504,15 +477,15 @@ digitalArt += '</div>';
 
 
 /*coding tab*/
-codingContentText = '<div style="column-count: 2">'
+codingContentText = '<div style="column-count: 2">';
 codingContentText += '<div class="aboutLinks"style="padding:1%;margin-top:0"><ul>Languages';
 codingContentText += '<li>Typescript, JavaScript, HTML, CSS (proficient)</li>';
 codingContentText += '<li>Python, Julia, Java (very familiar)</li>'
 codingContentText += '<li>C/C++ (okay)</li></ul></div>'
 
 codingContentText += '<div class="aboutLinks"style="padding:1%;margin-top:3%"><ul>Skills';
-codingContentText += '<li>SQL, NoSQL (MongoDB)</li>';
-codingContentText += '<li>API routing/creation</li>'
+codingContentText += '<li>SQL, NoSQL (MongoDB) integration</li>';
+codingContentText += '<li>RESTful API routing/design</li>'
 codingContentText += '<li>Vue (React-based) interfacing</li></ul></div>'
 codingContentText += '</div>'
 
@@ -533,13 +506,12 @@ text+='<div id="about" class="tabContent">';
 text+='<h2 id ="aboutHeader">Promia Chowdhury</h2><p>'+aboutContent+'</p>';
 text+='</div>';
 
-text+='<div id="coding" class="tabContent" style="display:none;margin:-5% 0 -8% 25px">';
+text+='<div id="coding" class="tabContent" style="display:none;margin:-5% 0 -8% 26px">';
 text+='<p style="margin-left:25px">'+codingContent+'</p>';
 text+='</div>';
 
 text+='<div id="graphics" class="tabContent"style="display:none;margin:-5% 0 -8% 25px">';
-text+='<h2 id ="graphicsHeader">graphics</h2><p>'+graphicsContent+'</p>';
-text+='</div>';
+text+=graphicsContent+'</div>';
 
 text+='<div id="art" class="tabContent" style="display:none;margin:-5% 0 -8% 25px">';
 text+='<h2 id ="digArtHeader">digital art</h2><p>'+digitalArt+'</p>';

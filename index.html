@@ -2,13 +2,24 @@
 <html>
 <head>
 <meta charset="UTF-8">
-    <title>promia's portfolio</title>
+    <title>Promia's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 /*things to do: reverse button, cursor, cursor changes when hovering over button */
 h2{
   color: #FAD02C;
+}
+li{
+  color: #fff;
+  font-size: 13px;
+  margin-left: 2%;
+}
+ul{
+  list-style-type: square;
+  text-emphasis: bold; 
+  color: #FAD02C;
+  margin-left: -2%;
 }
 div{
   font-size:98%;
@@ -92,17 +103,29 @@ blockquote{
   transition: 0.5s ease-out;
 }
 #about{
-  border-left: solid 0.5px #FAD02C;
-  margin-top: -1%;
+  margin: -3% 0 0 -3%;
+}
+#textStyle4{
+  margin-left: -4%;
 }
 .textStyle{
   color:#ddd;
 }.textStyle:hover {cursor: cell;}
+.aboutLinks{
+  font-size:16px;
+  margin-top:4%;
+  border:solid 1px #444;
+  padding: 2% 3%;
+}
 .aboutLink{
   padding-right: 10px;
   color: #444;
 }
 .aboutLink:hover{
+  color: #FAD02C;
+}
+.codeHeader{
+  text-emphasis: bold;
   color: #FAD02C;
 }
 .imageStyle{
@@ -125,10 +148,9 @@ blockquote{
   margin: 10% -25px 0;
   height:10%;
 }.codingContent{
-  display:none;
   overflow: hidden;
   transition: 1.0s ease-out;
-  margin: 10% -25px 0;
+  margin: 1.5% 0 0;
 }
 .entireContent{
   margin:-820% -450% -200% -550%;
@@ -167,6 +189,7 @@ blockquote{
 }.codeTitle{
   font-weight: bold;
   font-size: 18px;
+  color: #FAD02C;
 }
 .reverse{
   background: #111;
@@ -346,18 +369,33 @@ for (i =0; i< art.length; i++){
 }
 
 var coding = [
-  {title: 'area 51', image1: 'https://i.imgur.com/NHsxrco.png', image2: 'https://i.imgur.com/oE0ptTR.png',
-    description: 'my first website ever coded; made as a request (and as a joke) in my beginner days in girls who code with two other members; i was responsible for arranging the layout and the design.',
-    skills: 'javascript formatting, buttons, columns', link:'https://pc0808.github.io/area51/'},
-  {title: 'webcats', image1: 'https://i.imgur.com/9aDmiJc.png', image2: 'https://i.imgur.com/rjgfIIq.png',
-    description:'final project for girls who code, made with three other members. this was a passion project, based on a webcomic site that we frequented. i was responsible for majority of the backend, including the search button, random generator and database analysis.',
-    skills:'arrays/lists, for loops, search button, button extractions, innerHTML, console logs', link:'https://pc0808.github.io/webtoons/'},
-  {title: 'my portfolio', image1: 'https://i.imgur.com/XgLuPyR.png', image2: 'https://i.imgur.com/L91Mw6X.png',
-    description:'this is a portfolio display of some of the hobbies i partake in, such as graphic design, digital art and coding. i wanted to apply the coding i learned thus far towards a website where i worked individually.',
-    skills:'github pages, js animations, transitions', link:'https://pc0808.github.io/portfolio/'},
-  {title: 'modern art', image1: 'https://i.imgur.com/tFkGVjg.png', image2: 'https://i.imgur.com/L1c0JJP.png',
-    description:'this is a very simple and interactive site meant to emulate the look of blocky modern art canvases.',
-    skills:'differences between position attributes, splicing, rgb color generator', link:'https://pc0808.github.io/modern-art/'},
+  {title: 'Easel', image1: 'images/coding/easel1.png', image2: 'images/coding/easel2.png', 
+  languages: 'TypeScript, HTML, CSS', features: 'Google Firebase photo backup, Server-client model, RESTful API design, NoSQL external database, Vue interface flow with reusable components', 
+  description:'Social media app where users can post images of their artwork, and create boards of user posts', link:'https://easel-f.vercel.app/'},
+  
+  {title: 'Tunetrainer', image1: 'images/coding/tunetrainer1.png', image2: 'images/coding/tunetrainer2.png',
+  languages: 'TypeScript, HTML, CSS', features: 'API calls to ChatGPT, Server-client model, RESTful API design, NoSQL external database, reusable Vue components',
+  description: 'Final project for 6.104 (4 collaborators); I was responsible for API design, and majority of the frontend - generalized design components to be reusable with inputs. No longer deployed',
+  link: 'https://github.com/yanovsk/tunetrainer'},
+
+  {title: "Promia's Portfolio", image1: 'https://i.imgur.com/XgLuPyR.png', image2: 'https://i.imgur.com/L91Mw6X.png',
+  languages: 'JavaScript, HTML, CSS', features: 'JS Animations, Transitions, No React',
+  description:'My personal portfolio, rehashed from high school. An experiment on design elements like hovers and transitions', link:'https://pc0808.github.io/portfolio/'},
+
+  {title: "Promia's Perfect Portfolio", image1: 'images/coding/ppp1.png', image2: 'images/coding/ppp2.png',
+  languages: 'TypeScript', features: 'Vue navigation',
+  description: 'Portfolio for 6.104 using assigned template (I *only* customized it); displays thought process and blogs around UX design', link: 'https://61040-fa23.github.io/portfolio-pc0808/'
+  },
+
+  {title: 'Webcats', image1: 'https://i.imgur.com/9aDmiJc.png', image2: 'https://i.imgur.com/rjgfIIq.png',
+  languages: "JavaScript, HTML, CSS", features: 'First try at database structure/design, primitive search option',
+    description:'Final team project for GWC. I was responsible for majority of the backend, including the search button, random generator and database analysis.',
+    link:'https://pc0808.github.io/webtoons/'},
+
+  {title: 'Area 51', image1: 'https://i.imgur.com/NHsxrco.png', image2: 'https://i.imgur.com/oE0ptTR.png',
+    languages: 'JavaScript, HTML, CSS', features: "User-interactive layout, Sound element inclusion",
+    description: "Made for fun in early days at GWC; i was responsible for arranging the layout and the design.", link:'https://pc0808.github.io/area51/'},
+  
   /*{title: '', image1: '', image2: '', description:'', skills:'', link:''},
   */
 ];
@@ -366,13 +404,15 @@ codingDisplay = '';
 
 for(var i = 0; i < coding.length ; i++){
   codingDisplay += '<div class="container">';
-  codingDisplay += '<div style="border:solid 1px #444;padding:2.5%;background:#111">';
-  codingDisplay += '<img class="codingImage"src="'+coding[i].image1;
-  codingDisplay += '"><img class="codingImage"src="'+coding[i].image2+'"></div><div class="overlay">';
-  codingDisplay += '<div class="codingContentType"><a href="'+coding[i].link+'">';
+  codingDisplay += '<div style="border:solid 1px #444;padding: 2.5%;background:#111;display:flex">';
+  codingDisplay += '<img class="codingImage"src="'+coding[i].image1+'">';
+  codingDisplay += '<img class="codingImage"src="'+coding[i].image2+'"></div>';
+  codingDisplay += '<div class="overlay"><div class="codingContentType"><a href="'+coding[i].link+'">';
   codingDisplay += '<span class="codeTitle">'+coding[i].title+'</span><p>';
-  codingDisplay += '<i>description: </i>'+coding[i].description;
-  codingDisplay += '</p><p><i>skills learned: </i>'+coding[i].skills+'</a></p></div>';
+  codingDisplay += '<span class="codeHeader">Languages ▷ </span>'+coding[i].languages+'<p>';
+  codingDisplay += '<span class="codeHeader">Notable Features ▷ </span>'+coding[i].features+'<p>';
+  codingDisplay += '<span class="codeHeader">Description ▷ </span>'+coding[i].description;
+  codingDisplay += '</a></p></div>';
   codingDisplay += '</div></div><br>';
 }
 
@@ -407,6 +447,7 @@ yellowColor ="'#FAD02C'"
 
 /* about me tab*/
 links = [
+  {text: "Email", link: "mailto:Chowdhurypromia@gmail.com"},
   {text: "Github", link: "https://github.com/pc0808"},
   {text: "Linkedin", link: "https://www.linkedin.com/in/promia-chowdhury/"},
 ];
@@ -419,14 +460,14 @@ aboutContentText += "which helped nurture my sense of style when it comes to HTM
 aboutContentText += "I am also passionate about my hobby in <u><i>digital art</i></u>, an extension of my design background."
 aboutContentText += "<p>In total, i have almost 8 years of experience amongst all 3 fields."
 
-aboutLinks = '<span style="text=emphasis: bold; color: #FAD02C">LINKS</span>     ▷ '
+aboutLinks = '<span style="text=emphasis: bold; color: #FAD02C">Contact Me</span>     ▷ '
 for(const link of links){
   aboutLinks += '<a class="aboutLink"href = "'+link.link+'">'+link.text+'</a>';
 }
 
 aboutContent ='<div class="textStyle">';
 aboutContent += aboutContentText+'</div>';
-aboutContent+='<div style="font-size:16px;margin-top:4%">'+aboutLinks+'</div>';
+aboutContent+='<div class="aboutLinks">'+aboutLinks+'</div>';
 
 /* graphics tab */
 graphicsContentText = '<p><b>programs: </b>photoshop, picsart, adobe premiere pro';
@@ -463,26 +504,20 @@ digitalArt += '</div>';
 
 
 /*coding tab*/
-codingContentText = '<p><B>languages: </b>html, css javascript, python';
-codingContentText += '<br><B>experience: </b>almost 6 years in html/css, about 3 years in javascript/python, 2 years in c++</p>';
+codingContentText = '<div style="column-count: 2">'
+codingContentText += '<div class="aboutLinks"style="padding:1%;margin-top:0"><ul>Languages';
+codingContentText += '<li>Typescript, JavaScript, HTML, CSS (proficient)</li>';
+codingContentText += '<li>Python, Julia, Java (very familiar)</li>'
+codingContentText += '<li>C/C++ (okay)</li></ul></div>'
 
-ccOverText = 'i am pursuing coding ';
-ccOverText += 'in university because there is still a lot for me learn.';
+codingContentText += '<div class="aboutLinks"style="padding:1%;margin-top:3%"><ul>Skills';
+codingContentText += '<li>SQL, NoSQL (MongoDB)</li>';
+codingContentText += '<li>API routing/creation</li>'
+codingContentText += '<li>Vue (React-based) interfacing</li></ul></div>'
+codingContentText += '</div>'
 
-codingContent ='<div class="textStyle"style="margin:20% 0 0"id="textStyle4">';
-codingContent += '<span class="container"><span class="textOverlay">'+codingContentText;
-codingContent += '</span><span class="expOverlay"id="codingHover">'+ccOverText;
-codingContent += '</span></span></div>';
-
-codingContent += '<button class="collapsible"onclick="moveText4()"';
-codingContent += 'id="imageButton4"style="margin-bottom:9%">examples</button>';
-codingContent += '<div class="codingContent"id="imageDiv4">'+codingDisplay;
-codingContent += '</div>';
-
-codingContent += '<p><button class="reverse"style="display:none"id="codingReverse"';
-codingContent += 'onclick="reverseCoding()">compress examples';
-codingContent += '</button>';
-
+codingContent ='<div class="textStyle"id="textStyle4">'+codingContentText;
+codingContent += '<div class="codingContent"id="imageDiv4">'+codingDisplay+ '</div></div>';
 
 /* tabs + their styles/names */
 text ='<div style="margin-bottom:10%">';

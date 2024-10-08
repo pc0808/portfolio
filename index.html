@@ -30,6 +30,7 @@ div{
 }
 .wholeThing{
   margin:-20px;
+  min-height: 100dvh;
   vertical-align: middle;
   background: #111;
 }
@@ -113,7 +114,7 @@ blockquote{
 }
 .textStyle{
   color:#ddd;
-}.textStyle:hover {cursor: cell;}
+}
 .aboutLinks{
   font-size:16px;
   margin-top:4%;
@@ -236,8 +237,8 @@ var graphics = [
   {imageURL: 'https://i.imgur.com/Y0oZIiu.png', type: 'web layout'},
   {imageURL: 'images/graphics/mockup_interact.jpg', type: 'web layout + interaction'},
   {imageURL: 'https://i.imgur.com/VUx4SF5.jpeg', type: 'letterhead'},
-  {imageURL: 'https://i.imgur.com/uUF0eVs.jpeg', type: 'web layout'},
-  {imageURL: 'https://i.imgur.com/mLYI7HQ.jpeg', type: 'web layout'},
+  {imageURL: 'images/graphics/tcs6.jpg', type: 'web layout'},
+  {imageURL: 'images/graphics/tcs5.png', type: 'web layout'},
   {imageURL: 'https://i.imgur.com/Zger7EJ.jpeg', type: 'web layout'},
   {imageURL: 'https://i.imgur.com/QZpXhoD.png', type: 'web layout'},
   {imageURL: 'https://i.imgur.com/lsrsV1W.png', type: 'web layout'},
@@ -246,6 +247,10 @@ var graphics = [
   {imageURL: 'https://i.imgur.com/Z5Ziqg8.jpeg', type: 'letterhead'},
   {imageURL: 'https://i.imgur.com/IX6p4YP.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/saigGFf.png', type: 'infographic'},
+  {imageURL: 'images/graphics/tcs1.jpg', type: 'web layout'},
+  {imageURL: 'images/graphics/tcs2.jpg', type: 'web layout'},
+  {imageURL: 'images/graphics/tcs3.jpg', type: 'web layout'},
+  {imageURL: 'images/graphics/tcs4.jpg', type: 'web layout'},
   {imageURL: 'https://i.imgur.com/kJ1x4ov.png', type: 'wallpaper'},
   {imageURL: 'https://i.imgur.com/gTNhLmx.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/CJkBWtn.png', type: 'infographic'},
@@ -259,7 +264,6 @@ var graphics = [
   {imageURL: 'https://i.imgur.com/iVrFFkf.png', type: 'wallpaper'},
   {imageURL: 'https://i.imgur.com/1uL6JVo.png', type: 'book cover'},
   {imageURL: 'https://i.imgur.com/We3fbYH.png', type: 'wallpaper'},
-  {imageURL: 'https://i.imgur.com/4AbkgJH.png', type: 'wallpaper'},
   {imageURL: 'https://i.imgur.com/uAAuMn6.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/UNXHN04.png', type: 'infographic'},
   {imageURL: 'https://i.imgur.com/isyyuMl.jpg', type: 'infographic'},
@@ -292,12 +296,11 @@ var art=[
   {image: 'images/art/wonbin2.jpg',  type: 'realism study'},
   {image: 'images/art/wonbin3.jpg',  type: 'clothing study'},
 
-  {image: 'https://i.imgur.com/0Rpv1Qy.jpeg', type: 'painting render'},
+  {image: 'https://i.imgur.com/0Rpv1Qy.jpeg', type: 'illustration'},
   {image: 'https://pbs.twimg.com/media/E8BdE7KVUAM3Pv_?format=jpg&name=large', type: 'concept art'},
-  {image: 'https://pbs.twimg.com/media/EyEGUhsW8AEtC6V?format=jpg&name=large', type: 'pose'},
-  {image: 'https://i.imgur.com/FvywSE9.jpg', type: 'portrait illustration'},
+  {image: 'https://i.imgur.com/FvywSE9.jpg', type: 'illustration'},
   {image: 'https://pbs.twimg.com/media/EtMEyorWgAAXui3?format=jpg&name=large', type: 'watercolor painting'},
-  {image: 'https://i.imgur.com/Ha7PNlv.jpg', type: 'watercolor scene'},
+  {image: 'https://i.imgur.com/Ha7PNlv.jpg', type: 'watercolor study'},
   {image: 'https://i.imgur.com/bsXsO9q.jpeg', type: 'mural'}, 
   {image: 'images/art/dae.jpg',  type: 'character design'},
 /*  {image: '',  type: ''}, */
@@ -315,12 +318,12 @@ for (i =0; i< art.length; i++){
 
 var coding = [
   {title: 'Easel', image1: 'images/coding/easel1.png', image2: 'images/coding/easel2.png', 
-  languages: 'TypeScript, HTML, CSS', features: 'Google Firebase photo backup, Server-client model, RESTful API design, NoSQL external database, Vue interface flow with reusable components', 
+  languages: 'TypeScript, HTML, CSS', features: 'Vue (React), Google Firebase photo backup, Server-client model, RESTful API design, NoSQL external database, reusable components', 
   description:'Social media app where users can post images of their artwork, and create boards of user posts', link:'https://easel-f.vercel.app/'},
   
   {title: 'Tunetrainer', image1: 'images/coding/tunetrainer1.png', image2: 'images/coding/tunetrainer2.png',
-  languages: 'TypeScript, HTML, CSS', features: 'API calls to ChatGPT, Server-client model, RESTful API design, NoSQL external database, reusable Vue components',
-  description: 'Final project for 6.104 (4 collaborators); I was responsible for API design, and majority of the frontend - generalized design components to be reusable with inputs. No longer deployed',
+  languages: 'TypeScript, HTML, CSS', features: 'Vue (React), API calls to ChatGPT, Server-client model, RESTful API design, NoSQL external database, reusable components',
+  description: 'Final project for Software Studio (4 collaborators); I was responsible for API design, and majority of the frontend - generalized design components to be reusable with inputs. No longer deployed',
   link: 'https://github.com/yanovsk/tunetrainer'},
 
   {title: "Promia's Portfolio", image1: 'images/coding/portfolio1.png', image2: 'images/coding/portfolio1.png',
@@ -329,7 +332,7 @@ var coding = [
 
   {title: "Promia's Perfect Portfolio", image1: 'images/coding/ppp1.png', image2: 'images/coding/ppp2.png',
   languages: 'TypeScript', features: 'Vue navigation',
-  description: 'Portfolio for 6.104 using assigned template (I *only* customized it); displays thought process and blogs around UX design', link: 'https://61040-fa23.github.io/portfolio-pc0808/'
+  description: 'Portfolio for Software Studio using assigned template (I *only* customized it); displays thought process and blogs around UX design', link: 'https://61040-fa23.github.io/portfolio-pc0808/'
   },
 
   {title: 'Webcats', image1: 'https://i.imgur.com/9aDmiJc.png', image2: 'https://i.imgur.com/rjgfIIq.png',
@@ -399,7 +402,7 @@ links = [
 
 aboutContentText = "I am a 2024 graduate from MIT with a BS in <u><i>Computer Science</i></u> and a minor in Mathematics. ";
 aboutContentText += "I am currently looking for opportunities in <u><i>frontend or full-stack software engineering</i></u>, ";
-aboutContentText += "in order to bring to life my desire to create a larger space for human-made art and design in technology.<p>"
+aboutContentText += "to realize my goal in creating a larger space for human-made art and design in technology.<p>"
 aboutContentText += "My studies in Computer Science arose from my partipation in a <u><i>graphic design</i></u> community, ";
 aboutContentText += "which helped nurture my sense of style when it comes to HTML interfaces and UI/UX graphics. ";
 aboutContentText += "I am also passionate about my hobby in <u><i>digital art</i></u>, an extension of my design background."

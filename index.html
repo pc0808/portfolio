@@ -330,11 +330,6 @@ var coding = [
   languages: 'JavaScript, HTML, CSS', features: 'JS Animations, Transitions, No React',
   description:'My personal portfolio, rehashed from high school. An experiment on design elements like hovers and transitions', link:'https://pc0808.github.io/portfolio/'},
 
-  {title: "Promia's Perfect Portfolio", image1: 'images/coding/ppp1.png', image2: 'images/coding/ppp2.png',
-  languages: 'TypeScript', features: 'Vue navigation',
-  description: 'Portfolio for Software Studio using assigned template (I *only* customized it); displays thought process and blogs around UX design', link: 'https://61040-fa23.github.io/portfolio-pc0808/'
-  },
-
   {title: 'Webcats', image1: 'https://i.imgur.com/9aDmiJc.png', image2: 'https://i.imgur.com/rjgfIIq.png',
   languages: "JavaScript, HTML, CSS", features: 'First try at database structure/design, primitive search option',
     description:'Final team project for GWC. I was responsible for majority of the backend, including the search button, random generator and database analysis.',
@@ -355,12 +350,12 @@ for(var i = 0; i < coding.length ; i++){
   codingDisplay += '<div style="border:solid 1px #444;padding: 2.5%;display:flex">';
   codingDisplay += '<img class="codingImage"src="'+coding[i].image1+'">';
   codingDisplay += '<img class="codingImage"src="'+coding[i].image2+'"></div>';
-  codingDisplay += '<div class="overlay"><div class="codingContentType"><a href="'+coding[i].link+'">';
+  codingDisplay += '<div class="overlay"><div class="codingContentType">';
   codingDisplay += '<span class="codeTitle">'+coding[i].title+'</span><p>';
   codingDisplay += '<span class="codeHeader">Languages </span>▷ '+coding[i].languages+'<p>';
   codingDisplay += '<span class="codeHeader">Notable Features </span>▷ '+coding[i].features+'<p>';
   codingDisplay += '<span class="codeHeader">Description </span>▷ '+coding[i].description;
-  codingDisplay += '</a></p></div>';
+  codingDisplay += '</p></div>';
   codingDisplay += '</div></div><br>';
 }
 
@@ -450,9 +445,9 @@ digitalArt += '</div>';
 /*coding tab*/
 codingContentText = '<div style="column-count: 2">';
 codingContentText += '<div class="aboutLinks"style="padding:1%;margin-top:0"><ul>Languages';
-codingContentText += '<li>Typescript, JavaScript, HTML, CSS (proficient)</li>';
-codingContentText += '<li>Python, Julia, Java (very familiar)</li>'
-codingContentText += '<li>C/C++ (okay)</li></ul></div>'
+codingContentText += '<li>Typescript, Java/JavaScript, HTML, CSS (web)</li>';
+codingContentText += '<li>Python, Julia</li>'
+codingContentText += '<li>C/C++</li></ul></div>'
 
 codingContentText += '<div class="aboutLinks"style="padding:1%;margin-top:3%"><ul>Skills';
 codingContentText += '<li>SQL, NoSQL (MongoDB) integration</li>';
